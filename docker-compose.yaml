@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  # --- PROXY ---
+  proxy:
+    image: nginx:alpine
+    container_name: proxy-nginx
+    ports:
+      - "80:80"   #Para entrar desde el navegador
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf #Configuracion
+
+  # --- CHISTES ---
+  chiste:
+    build: ./chiste #el Dockerfile esta ahi
+    container_name: chiste-app
+
+# --- ENCUESTA 1, tiene mas carga ---
+  encuesta1:
+    build: ./encuesta #el Dockefle esta ahi
+    hostname: encuesta_1_X3 # si le ponemos hostname luego en el php pongo el hostname y se ve que tiene mas carga
+    volumes:
+      - ./datos:/var/www/html/data #donde van los datos de la encuesta guardados
+
+  # --- ENCUESTA 2 ---
+  encuesta2:
+    build: ./encuesta
+    hostname: encuesta_normal_2
+    volumes:
+      - ./datos:/var/www/html/data
+
+  # --- ENCUESTA 3 ---
+  encuesta3:
+    build: ./encuesta
+    hostname: encuesta_normal_3
+    volumes:
+      - ./datos:/var/www/html/data
