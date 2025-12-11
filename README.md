@@ -167,7 +167,7 @@ Usamos --build para asegurar que las imagenes se construyen con los últimos cam
 ## Guía de Pruebas y Verificación
 Vamos a verificar quien todo funciona como debe.
 
-1. ** Servicio "Chiste"**:
+1. **Servicio Chistes**:
 
     Verificamos que el proxy redirige el dominio correcto y el PHP funciona.
 
