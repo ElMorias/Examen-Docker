@@ -192,3 +192,12 @@ Vamos a verificar quien todo funciona como debe.
     * Aunque cambie la replica, se recargue la pagina o se apague y se vuelva a encender el contenedor, se deben de mantener la cantidad de votos.
 
 ---
+
+
+
+
+## Authors
+
+- [@ElMorias-MarioMoralVillar](https://github.com/ElMorias)
+
+
