@@ -129,6 +129,8 @@ Aqui tenemos la configuracion de los dominios, para el sevicio de la encuesta, l
 
 Para la configuracion de los chistes, solo añadimos el nombre del servidor y le decimos a quien le pasa el trabajo.
 
+---
+
 ## Requisitos y Configuración Previa
 
 Para ejecutarlo, tenemos que simular los dominios mediante el archivo `hosts` del sistema.
@@ -150,7 +152,7 @@ Opcion 1 -> Abrir bloc de notas como Administrador y abrir el archivo.
                                             
 Opcion 2 -> Con VsCode al guardar aparece la opcion de dar permisos.
 
-
+---
 
 ## Ejecución
 
@@ -160,7 +162,7 @@ Opcion 2 -> Con VsCode al guardar aparece la opcion de dar permisos.
 
 Usamos --build para asegurar que las imagenes se construyen con los últimos cambios del codigo.
 
-
+---
 
 ## Guía de Pruebas y Verificación
 Vamos a verificar quien todo funciona como debe.
